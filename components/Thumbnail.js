@@ -10,6 +10,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
         ref={ref}
         className="group cursor-pointer p-2 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
         <Image
+            alt={result.title || result.original_name}
             layout="responsive"
             height={1000}
             width= {1920}
